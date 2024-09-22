@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Dedsi.Blog.ServiceDefaults\Dedsi.Blog.ServiceDefaults.csproj" />
+    <ProjectReference Include="..\..\aspires\Dedsi.Blog.ServiceDefaults\Dedsi.Blog.ServiceDefaults.csproj" />
   </ItemGroup>
 
 </Project>

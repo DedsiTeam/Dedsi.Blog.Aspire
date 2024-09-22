@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IsAspireHost>true</IsAspireHost>
+    <UserSecretsId>b91394b7-d0bc-4b29-bbfb-6e2c04b2da14</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspire.Hosting.AppHost" Version="8.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\apiServices\Dedsi.Blog.Article\Dedsi.Blog.Article.csproj" />
+    <ProjectReference Include="..\..\apiServices\Dedsi.Blog.BackgroundComputing\Dedsi.Blog.BackgroundComputing.csproj" />
+    <ProjectReference Include="..\..\apiServices\Dedsi.Blog.File\Dedsi.Blog.File.csproj" />
+    <ProjectReference Include="..\..\apiServices\Dedsi.Blog.Identity\Dedsi.Blog.Identity.csproj" />
+    <ProjectReference Include="..\..\gateways\Dedsi.Blog.AdminGateway\Dedsi.Blog.AdminGateway.csproj" />
+    <ProjectReference Include="..\..\gateways\Dedsi.Blog.PublicGateway\Dedsi.Blog.PublicGateway.csproj" />
+  </ItemGroup>
+
+</Project>

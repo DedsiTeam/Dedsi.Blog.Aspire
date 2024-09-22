@@ -2,10 +2,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.12.35309.182
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dedsi.Blog.AppHost", "Dedsi.Blog.AppHost\Dedsi.Blog.AppHost.csproj", "{52CE25DF-B8FE-405A-8145-022F654A08C2}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dedsi.Blog.ServiceDefaults", "Dedsi.Blog.ServiceDefaults\Dedsi.Blog.ServiceDefaults.csproj", "{F543FD9E-9B79-45C7-839A-3077FCB6D840}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "apiServices", "apiServices", "{F496FFE3-6EEB-4581-B79A-1094AE852FDA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dedsi.Blog.Identity", "apiServices\Dedsi.Blog.Identity\Dedsi.Blog.Identity.csproj", "{76F1CD92-F6DB-4717-B7C9-C9D067A790A1}"
@@ -18,7 +14,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dedsi.Blog.BackgroundComput
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "gateways", "gateways", "{0DF4F6E8-FDF2-4312-853F-C173DAB9C6EB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dedsi.Blog.PublicGateway", "Dedsi.Blog.PublicGateway\Dedsi.Blog.PublicGateway.csproj", "{71DF170F-2141-4996-AB22-2580A8F5A978}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "aspires", "aspires", "{2308D331-2D87-4500-9D95-38AE1325C011}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dedsi.Blog.AppHost", "aspires\Dedsi.Blog.AppHost\Dedsi.Blog.AppHost.csproj", "{D5C3020F-1F0D-4719-8793-410AB2045115}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dedsi.Blog.ServiceDefaults", "aspires\Dedsi.Blog.ServiceDefaults\Dedsi.Blog.ServiceDefaults.csproj", "{49FE3E21-D0C4-4B81-989B-148C85E14E26}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dedsi.Blog.AdminGateway", "gateways\Dedsi.Blog.AdminGateway\Dedsi.Blog.AdminGateway.csproj", "{861D16F6-52A3-4FA1-B63A-4650FA4BD0B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dedsi.Blog.PublicGateway", "gateways\Dedsi.Blog.PublicGateway\Dedsi.Blog.PublicGateway.csproj", "{CFC75726-647C-43B2-A13A-9A813FADBDCC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,14 +30,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{52CE25DF-B8FE-405A-8145-022F654A08C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{52CE25DF-B8FE-405A-8145-022F654A08C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{52CE25DF-B8FE-405A-8145-022F654A08C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{52CE25DF-B8FE-405A-8145-022F654A08C2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F543FD9E-9B79-45C7-839A-3077FCB6D840}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F543FD9E-9B79-45C7-839A-3077FCB6D840}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F543FD9E-9B79-45C7-839A-3077FCB6D840}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F543FD9E-9B79-45C7-839A-3077FCB6D840}.Release|Any CPU.Build.0 = Release|Any CPU
 		{76F1CD92-F6DB-4717-B7C9-C9D067A790A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{76F1CD92-F6DB-4717-B7C9-C9D067A790A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{76F1CD92-F6DB-4717-B7C9-C9D067A790A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -50,10 +46,22 @@ Global
 		{8F9C1A10-7417-4989-9CAE-858D97D6F3AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F9C1A10-7417-4989-9CAE-858D97D6F3AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F9C1A10-7417-4989-9CAE-858D97D6F3AD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{71DF170F-2141-4996-AB22-2580A8F5A978}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{71DF170F-2141-4996-AB22-2580A8F5A978}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{71DF170F-2141-4996-AB22-2580A8F5A978}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{71DF170F-2141-4996-AB22-2580A8F5A978}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5C3020F-1F0D-4719-8793-410AB2045115}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5C3020F-1F0D-4719-8793-410AB2045115}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5C3020F-1F0D-4719-8793-410AB2045115}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5C3020F-1F0D-4719-8793-410AB2045115}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49FE3E21-D0C4-4B81-989B-148C85E14E26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49FE3E21-D0C4-4B81-989B-148C85E14E26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49FE3E21-D0C4-4B81-989B-148C85E14E26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49FE3E21-D0C4-4B81-989B-148C85E14E26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{861D16F6-52A3-4FA1-B63A-4650FA4BD0B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{861D16F6-52A3-4FA1-B63A-4650FA4BD0B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{861D16F6-52A3-4FA1-B63A-4650FA4BD0B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{861D16F6-52A3-4FA1-B63A-4650FA4BD0B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFC75726-647C-43B2-A13A-9A813FADBDCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFC75726-647C-43B2-A13A-9A813FADBDCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFC75726-647C-43B2-A13A-9A813FADBDCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFC75726-647C-43B2-A13A-9A813FADBDCC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -63,7 +71,10 @@ Global
 		{394902F8-2BC5-493C-A048-F09C770D46BE} = {F496FFE3-6EEB-4581-B79A-1094AE852FDA}
 		{09F464C2-9D56-45BA-8AC2-E8CB9CC78FA4} = {F496FFE3-6EEB-4581-B79A-1094AE852FDA}
 		{8F9C1A10-7417-4989-9CAE-858D97D6F3AD} = {F496FFE3-6EEB-4581-B79A-1094AE852FDA}
-		{71DF170F-2141-4996-AB22-2580A8F5A978} = {0DF4F6E8-FDF2-4312-853F-C173DAB9C6EB}
+		{D5C3020F-1F0D-4719-8793-410AB2045115} = {2308D331-2D87-4500-9D95-38AE1325C011}
+		{49FE3E21-D0C4-4B81-989B-148C85E14E26} = {2308D331-2D87-4500-9D95-38AE1325C011}
+		{861D16F6-52A3-4FA1-B63A-4650FA4BD0B6} = {0DF4F6E8-FDF2-4312-853F-C173DAB9C6EB}
+		{CFC75726-647C-43B2-A13A-9A813FADBDCC} = {0DF4F6E8-FDF2-4312-853F-C173DAB9C6EB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {648C85B8-A4DD-4B9F-9B19-2DE90C4680AE}
